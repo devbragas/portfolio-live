@@ -55,13 +55,13 @@ export function Header() {
         </nav>
         <div className="ml-auto flex items-center gap-2">
           <button
-            className="flex items-center justify-center w-9 h-9 rounded-lg border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200 text-sm font-medium"
+            className="flex items-center justify-center w-9 h-9 rounded-lg cursor-pointer border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200 text-sm font-medium"
             type="button"
           >
             PT
           </button>
           <button
-            className="flex items-center justify-center w-9 h-9 rounded-lg border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200"
+            className="flex items-center justify-center w-9 h-9 rounded-lg cursor-pointer border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200"
             type="button"
           >
             <svg
