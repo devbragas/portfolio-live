@@ -1,11 +1,12 @@
 import Link from "next/link";
 
 const navLink = `
-  relative text-sm font-bold text-white/70
-  hover:text-white
+  relative text-sm font-semibold 
+ text-[var(--color-foreground)]
+  hover:text-black
   after:absolute after:left-0 after:-bottom-1
   after:h-[2px] after:w-0
-  after:bg-white after:transition-all after:duration-300
+  after:bg-black after:transition-all after:duration-300
   hover:after:w-full
    transition-all duration-300 hover:scale-105 group 
 `;
@@ -29,7 +30,7 @@ export function Header() {
       <Link className={navLink} href="#experience">
         Experiência
       </Link>
-      <Link className={navLink} href="#academical">
+      <Link className={navLink} href="#education">
         Acadêmico
       </Link>
       <Link className={navLink} href="#contact">
