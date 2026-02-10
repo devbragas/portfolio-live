@@ -5,8 +5,8 @@ import { Container } from "../components/ui/container";
 import { Header } from "../components/ui/header";
 
 export const metadata: Metadata = {
-  title: "Enzo Vasconcelos | Portfólio",
-  description: "Portfólio pessoal Enzo Vasconcelos",
+  title: "Enzo Braga | Portfólio",
+  description: "Portfólio pessoal Enzo Vasconcelos Braga",
 };
 
 export default function RootLayout({
