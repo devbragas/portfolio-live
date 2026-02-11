@@ -36,9 +36,7 @@ export function Header() {
           <Link className={navLink} href="#experience">
             Experiência
           </Link>
-          <Link className={navLink} href="#education">
-            Acadêmico
-          </Link>
+
           <Link className={navLink} href="#contact">
             Contato
           </Link>

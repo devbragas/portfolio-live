@@ -45,12 +45,7 @@ export function Footer() {
               >
                 Sobre mim
               </button>
-              <button
-                onClick={() => handleScroll("experience")}
-                className="nav-btn"
-              >
-                Experiência
-              </button>
+
               <button
                 onClick={() => handleScroll("education")}
                 className="nav-btn"
