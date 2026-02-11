@@ -67,9 +67,9 @@ const languages = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-20 pb-20 bg-background">
+    <section id="skills" className="py-16 lg:py-20 px-4 lg:px-0 bg-background">
       <Container>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8 lg:gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ export default function SkillsSection() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mt-2 text-[#162456]">
+            <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456]">
               Habilidades & Conhecimentos
             </h2>
             <p className="text-[#162456]/70 mt-4 max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ export default function SkillsSection() {
           </motion.div>
 
           {/* Technical Skills Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {technicalSkills.map((skill, index) => (
               <motion.div
                 key={skill.category}
@@ -127,7 +127,7 @@ export default function SkillsSection() {
           </div>
 
           {/* Soft Skills & Languages */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {/* Soft Skills */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}

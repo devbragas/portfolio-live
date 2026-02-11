@@ -2,13 +2,13 @@
 
 import { Container } from "../ui/container";
 import { motion } from "motion/react";
-import { Code2, GraduationCap, Linkedin, Github } from "lucide-react";
+import { Code2, GraduationCap } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="about" className="pt-52 bg-background">
+    <section id="about" className="pt-32 lg:pt-52 px-4 lg:px-0 bg-background">
       <Container>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-8 lg:gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -16,20 +16,20 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mt-2 text-[#162456]">
+            <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456]">
               Quem Sou Eu?
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-4 sm:gap-6"
             >
-              <p className="text-lg text-[#162456]/80 leading-relaxed">
+              <p className="text-base sm:text-lg text-[#162456]/80 leading-relaxed">
                 <span className="text-[#0b1215] font-semibold">
                   Hey, eu sou o Enzo.
                 </span>{" "}
@@ -63,7 +63,7 @@ export function AboutSection() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

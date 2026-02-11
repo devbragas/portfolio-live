@@ -4,25 +4,25 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { TypeAnimation } from "react-type-animation";
 import { HeroButton } from "../ui/hero-button";
-import { Check, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { HeroBackground } from "../ui/receba";
 
 export default function HeroSection() {
   return (
-    <section className="flex items-center justify-between gap-12 pt-36">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 pt-24 lg:pt-36 px-4 lg:px-0">
       <HeroBackground />
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex flex-col gap-5 flex-1"
+        className="flex flex-col gap-5 flex-1 text-center lg:text-left"
       >
-        <div className="flex gap-3">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-3">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className=" inline-flex items-center px-4 py-2 bg-linear-to-br from-white/20 via-white/10 to-white/5 backdrop-blur-xl rounded-full text-sm font-medium text-blue-950/90 border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.5)] hover:border-white/40 transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-linear-to-br from-white/20 via-white/10 to-white/5 backdrop-blur-xl rounded-full text-xs sm:text-sm font-medium text-blue-950/90 border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.5)] hover:border-white/40 transition-all duration-300 hover:scale-105"
           >
             Desenvolvedor de Software
           </motion.div>
@@ -30,7 +30,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="inline-flex items-center px-4 py-2 bg-linear-to-br from-white/20 via-white/10 to-white/5 backdrop-blur-xl rounded-full text-sm font-medium text-blue-950/90 border border-white/30 shadow-[0_8px_32px_0_#1f26875e] hover:shadow-[0_8px_32px_0_#1f26877f] hover:border-white/40 transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-linear-to-br from-white/20 via-white/10 to-white/5 backdrop-blur-xl rounded-full text-xs sm:text-sm font-medium text-blue-950/90 border border-white/30 shadow-[0_8px_32px_0_#1f26875e] hover:shadow-[0_8px_32px_0_#1f26877f] hover:border-white/40 transition-all duration-300 hover:scale-105"
           >
             Arquiteto de Software
           </motion.div>
@@ -40,7 +40,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="font-bold text-4xl"
+          className="font-bold text-3xl sm:text-4xl lg:text-5xl"
         >
           Enzo Vasconcelos
         </motion.h1>
@@ -69,16 +69,16 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl"
+          className="text-base sm:text-lg lg:text-xl max-w-lg mx-auto lg:mx-0"
         >
-          Desenvolvedor de Software com experiência em desenvolvimento de <br />
+          Desenvolvedor de Software com experiência em desenvolvimento de
           software, design de interfaces e gerenciamento de projetos.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex  items-center gap-1.5"
+          className="flex items-center justify-center lg:justify-start gap-1.5"
         >
           <MapPin size={16} />
           <p>Sobral, Brasil</p>
@@ -99,7 +99,7 @@ export default function HeroSection() {
         transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
         className="relative flex-shrink-0"
       >
-        <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-(--tertiary-text)/30 shadow-xl">
+        <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-(--tertiary-text)/30 shadow-xl">
           <Image
             src="/jo.jpg"
             alt="Enzo Vasconcelos"

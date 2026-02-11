@@ -7,7 +7,7 @@ import { Container } from "../ui/container";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-16 lg:py-20 px-4 lg:px-0 bg-background">
       <Container>
         <div className="flex flex-col items-center text-center">
           <motion.h2
@@ -15,7 +15,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold mb-4 text-[#162456]"
+            className="text-3xl sm:text-4xl font-bold mb-4 text-[#162456]"
           >
             Vamos Trabalhar Juntos?
           </motion.h2>
@@ -35,11 +35,11 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex gap-4 mb-10"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 w-full sm:w-auto"
           >
             <Link
               href="https://wa.me/5588981050912"
-              className="flex items-center gap-2 bg-[#2E4A8A] hover:bg-[#162456] text-white font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/30 hover:scale-105"
+              className="flex items-center justify-center gap-2 bg-[#2E4A8A] hover:bg-[#162456] text-white font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/30 hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export function ContactSection() {
             </Link>
             <Link
               href="mailto:enzovasoncelosbraga@gmail.com"
-              className="flex items-center gap-2 border border-[#2E4A8A] hover:border-[#162456] text-[#0b1215] font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105"
+              className="flex items-center justify-center gap-2 border border-[#2E4A8A] hover:border-[#162456] text-[#0b1215] font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export function ContactSection() {
             ou me encontre nas redes
           </motion.p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

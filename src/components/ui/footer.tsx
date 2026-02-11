@@ -20,12 +20,12 @@ const handleScroll = (id: string) => {
 
 export function Footer() {
   return (
-    <footer className="py-10 bg-[#eef3ee]">
+    <footer className="py-8 lg:py-10 px-4 lg:px-0 bg-[#eef3ee]">
       <Container>
-        <div className="flex gap-5 place-content-between pb-8">
-          <div className="flex-1 flex-col">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-5 place-content-between pb-8">
+          <div className="flex-1 flex flex-col">
             <DevLogo />
-            <p className="text-sm">
+            <p className="text-sm mt-2">
               Desenvolvedor Full Stack criando experiências digitais com código
               limpo e design moderno.
             </p>
@@ -90,7 +90,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex place-content-between text-xs border-t border-white/50 pt-6">
+        <div className="flex flex-col sm:flex-row place-content-between gap-2 text-xs border-t border-white/50 pt-6 text-center sm:text-left">
           <p>© 2026 Enzo Vasconcelos Braga. Todos os direitos reservados.</p>
           <p>Feito com Next.js & Tailwind CSS</p>
         </div>
