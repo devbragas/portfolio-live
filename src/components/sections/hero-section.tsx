@@ -50,7 +50,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative flex-shrink-0">
-        <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-[var(--tertiary-text)]/30 shadow-xl">
+        <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-(--tertiary-text)/30 shadow-xl">
           <Image
             src="/jo.jpg"
             alt="Enzo Vasconcelos"

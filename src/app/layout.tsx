@@ -3,6 +3,7 @@ import "./globals.css";
 import { satoshi } from "./fonts/fonts";
 import { Container } from "../components/ui/container";
 import { Header } from "../components/ui/header";
+import { Footer } from "../components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Enzo Braga | Portfólio",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <main className="pt-16">
           <Container>{children}</Container>
         </main>
+        <Footer />
       </body>
     </html>
   );

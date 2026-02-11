@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./container";
+import { DevLogo } from "./dev-logo";
 
 const navLink = `
   relative text-sm font-semibold 
@@ -24,18 +25,7 @@ export function Header() {
       "
     >
       <Container className="relative flex items-center">
-        <div className="flex items-center">
-          <Image
-            src="/logo.png"
-            width={70}
-            height={70}
-            alt="Enzo Braga Dev Logo"
-          />
-          <p>
-            <span className="text-(--tertiary-text)">dev</span>
-            <span className="font-bold text-(--secondary-text)">bragas</span>
-          </p>
-        </div>
+        <DevLogo />
         <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6">
           <Link className={navLink} href="#skills">
             Habilidades

@@ -147,7 +147,16 @@ body {
   }
 }
 
-/* acessibilidade */
+@layer components {
+  .nav-btn {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+
+  .nav-btn:hover {
+    color: var(--tertiary-text);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   .animate-floatA, .animate-floatB, .animate-floatC, .animate-drift,
