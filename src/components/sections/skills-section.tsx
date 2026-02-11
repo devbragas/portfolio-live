@@ -16,35 +16,81 @@ import { useTranslations } from "next-intl";
 
 const technicalSkillsData = [
   {
-    categoryKey: "languages",
+    categoryKey: "frontend",
     icon: Code2,
-    items: ["JavaScript", "TypeScript"],
-    levelKey: "advanced",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Redux",
+      "React Query",
+      "StyledComponents",
+      "Framer Motion",
+      "Storybook",
+      "Zod",
+      "Zustand",
+    ],
   },
   {
-    categoryKey: "frameworks",
+    categoryKey: "backend",
     icon: Layers,
-    items: ["React.js", "Next.js", "Nest.js", "React Native"],
+    items: [
+      "Java",
+      "SpringBoot",
+      "REST APIs",
+      "GraphQL",
+      "JWT Auth",
+      "OAuth 2.0",
+      "WebHooks",
+      "Kafka",
+      "RabbitMQ",
+      "Microservices",
+    ],
   },
   {
-    categoryKey: "styling",
+    categoryKey: "devops",
     icon: Palette,
-    items: ["Tailwind CSS", "Styled Components", "Shadcn/UI"],
+    items: [
+      "Git",
+      "Docker",
+      "Jest",
+      "AWS",
+      "Cypress",
+      "Datadog",
+      "Jira",
+      "Postman",
+      "Jenkins",
+      "Figma",
+      "Linux",
+      "Nginx",
+    ],
   },
   {
     categoryKey: "infrastructure",
     icon: Server,
-    items: ["Docker", "Git", "CI/CD", "TDD", "SOLID"],
+    items: ["AWS CloudWatch", "Vercel Deploy", "GitHub Actions", "VPS"],
   },
   {
     categoryKey: "database",
     icon: Database,
-    items: ["MySQL", "PostgreSQL", "MongoDB"],
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "SQLite",
+      "Redis",
+      "Prisma",
+      "TypeORM",
+      "Firebase",
+      "Supabase",
+    ],
   },
   {
     categoryKey: "others",
     icon: Globe,
-    items: ["REST API", "JWT Auth", "Vercel"],
+    items: ["Jira", "Scrum", "Kanban"],
   },
 ];
 
@@ -109,11 +155,6 @@ export default function SkillsSection() {
                     <h3 className="font-semibold text-[#0b1215] dark:text-white">
                       {t(skill.categoryKey)}
                     </h3>
-                    {skill.levelKey && (
-                      <span className="text-xs text-[#2E4A8A] dark:text-blue-400 font-medium">
-                        {t(skill.levelKey)}
-                      </span>
-                    )}
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2">

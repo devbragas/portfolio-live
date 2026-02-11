@@ -26,9 +26,9 @@
   "skills": {
     "title": "Skills & Knowledge",
     "subtitle": "Technologies and competencies I use to create high-impact solutions",
-    "languages": "Languages",
-    "frameworks": "Frameworks",
-    "styling": "Styling",
+    "frontend": "FrontEnd",
+    "backend": "BackEnd",
+    "devops": "CI/CD & DevOps",
     "infrastructure": "Infrastructure",
     "database": "Database",
     "others": "Others",

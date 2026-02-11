@@ -11,7 +11,7 @@ import { useThemeStore } from "../../app/store/use-theme-store";
 
 const navLink = `
   relative text-sm font-semibold 
- text-[var(--color-foreground)]
+  text-gray-800 dark:text-gray-100
   hover:text-black dark:hover:text-white
   after:absolute after:left-0 after:-bottom-1
   after:h-[2px] after:w-0
@@ -48,7 +48,7 @@ export function Header() {
         <Container className="relative flex items-center">
           <DevLogo />
 
-          <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
+          <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 ">
             <Link className={navLink} href="#about">
               {t("about")}
             </Link>
