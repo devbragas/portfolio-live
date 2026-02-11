@@ -7,7 +7,9 @@
     "typing2": "Arquiteto de Software Júnior",
     "typing3": "Engenheiro de Software",
     "description": "Desenvolvedor de Software com experiência em desenvolvimento de software, design de interfaces e gerenciamento de projetos.",
-    "location": "Sobral, Brasil"
+    "location": "Sobral, Brasil",
+    "cvButton": "Baixar Currículo",
+    "contactButton": "Entrar em contato"
   },
   "about": {
     "title": "Quem Sou Eu?",

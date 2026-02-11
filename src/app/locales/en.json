@@ -7,7 +7,9 @@
     "typing2": "Junior Software Architect",
     "typing3": "Software Engineer",
     "description": "Software Developer with experience in software development, interface design and project management.",
-    "location": "Sobral, Brazil"
+    "location": "Sobral, Brazil",
+    "cvButton": "Download CV",
+    "contactButton": "Contact me"
   },
   "about": {
     "title": "Who Am I?",

@@ -1,7 +1,9 @@
 import { Download } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function HeroButton() {
+  const t = useTranslations("hero");
   return (
     <div className="flex gap-4">
       <Link
@@ -10,7 +12,7 @@ export function HeroButton() {
         className="relative cursor-pointer py-2.5 px-6 text-center inline-flex justify-center text-sm uppercase text-(--secondary-text) rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-[var(--secondary-text)] focus:outline-offset-4 overflow-hidden w-fit"
       >
         <div className="flex justify-center items-center gap-1.5">
-          <span className="relative z-20">Baixar Currículo</span>
+          <span className="relative z-20">{t("cvButton")}</span>
           <Download size={16} />
         </div>
 
@@ -26,7 +28,7 @@ export function HeroButton() {
         href="#contact"
         className="relative cursor-pointer py-2.5 px-6 text-center  inline-flex justify-center text-sm uppercase text-(--secondary-text) rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-[var(--secondary-text)] focus:outline-offset-4 overflow-hidden w-fit"
       >
-        <span className="relative z-20">Entrar em contato</span>
+        <span className="relative z-20">{t("contactButton")}</span>
 
         <span className="absolute left-[-75%] top-0 h-full w-[50%] bg-(--tertiary-text)/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
 
