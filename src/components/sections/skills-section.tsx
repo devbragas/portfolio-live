@@ -70,7 +70,10 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-16 lg:py-20 px-4 lg:px-0 bg-background">
+    <section
+      id="skills"
+      className="py-16 lg:py-20 px-4 lg:px-0 bg-background dark:bg-gray-900 transition-colors duration-300"
+    >
       <Container>
         <div className="flex flex-col gap-8 lg:gap-12">
           <motion.div
@@ -80,10 +83,10 @@ export default function SkillsSection() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456]">
+            <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456] dark:text-white">
               {t("title")}
             </h2>
-            <p className="text-[#162456]/70 mt-4 max-w-2xl mx-auto">
+            <p className="text-[#162456]/70 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
               {t("subtitle")}
             </p>
           </motion.div>
@@ -97,18 +100,18 @@ export default function SkillsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white border border-[#2E4A8A]/10 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/10 hover:border-[#2E4A8A]/30"
+                className="bg-white dark:bg-gray-800 border border-[#2E4A8A]/10 dark:border-gray-700 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/10 dark:hover:shadow-blue-500/10 hover:border-[#2E4A8A]/30 dark:hover:border-gray-600"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center">
-                    <skill.icon className="w-5 h-5 text-[#2E4A8A]" />
+                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 dark:bg-blue-500/20 flex items-center justify-center">
+                    <skill.icon className="w-5 h-5 text-[#2E4A8A] dark:text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0b1215]">
+                    <h3 className="font-semibold text-[#0b1215] dark:text-white">
                       {t(skill.categoryKey)}
                     </h3>
                     {skill.levelKey && (
-                      <span className="text-xs text-[#2E4A8A] font-medium">
+                      <span className="text-xs text-[#2E4A8A] dark:text-blue-400 font-medium">
                         {t(skill.levelKey)}
                       </span>
                     )}
@@ -118,7 +121,7 @@ export default function SkillsSection() {
                   {skill.items.map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1.5 text-sm bg-[#f8fbf8] border border-[#2E4A8A]/10 rounded-full text-[#162456] hover:border-[#2E4A8A]/30 transition-colors"
+                      className="px-3 py-1.5 text-sm bg-[#f8fbf8] dark:bg-gray-700 border border-[#2E4A8A]/10 dark:border-gray-600 rounded-full text-[#162456] dark:text-gray-200 hover:border-[#2E4A8A]/30 dark:hover:border-gray-500 transition-colors"
                     >
                       {item}
                     </span>
@@ -136,29 +139,29 @@ export default function SkillsSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2E4A8A]/10 rounded-2xl p-6"
+              className="bg-white dark:bg-gray-800 border border-[#2E4A8A]/10 dark:border-gray-700 rounded-2xl p-6"
             >
-              <h3 className="text-lg font-semibold text-[#0b1215] mb-6">
+              <h3 className="text-lg font-semibold text-[#0b1215] dark:text-white mb-6">
                 {t("softSkills")}
               </h3>
               <div className="flex flex-col gap-4">
                 {softSkills.map((skill) => (
                   <div key={skill.title} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center shrink-0">
-                      <skill.icon className="w-5 h-5 text-[#2E4A8A]" />
+                    <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 dark:bg-blue-500/20 flex items-center justify-center shrink-0">
+                      <skill.icon className="w-5 h-5 text-[#2E4A8A] dark:text-blue-400" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-[#0b1215]">
+                      <h4 className="font-medium text-[#0b1215] dark:text-white">
                         {skill.title}
                       </h4>
-                      <p className="text-sm text-[#162456]/60">
+                      <p className="text-sm text-[#162456]/60 dark:text-gray-400">
                         {skill.description}
                       </p>
                     </div>
                   </div>
                 ))}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 dark:bg-blue-500/20 flex items-center justify-center shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -169,17 +172,17 @@ export default function SkillsSection() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="text-[#2E4A8A]"
+                      className="text-[#2E4A8A] dark:text-blue-400"
                     >
                       <path d="M12 20h9" />
                       <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#0b1215]">
+                    <h4 className="font-medium text-[#0b1215] dark:text-white">
                       {t("continuousLearning")}
                     </h4>
-                    <p className="text-sm text-[#162456]/60">
+                    <p className="text-sm text-[#162456]/60 dark:text-gray-400">
                       {t("continuousLearningDesc")}
                     </p>
                   </div>
@@ -193,25 +196,25 @@ export default function SkillsSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2E4A8A]/10 rounded-2xl p-6"
+              className="bg-white dark:bg-gray-800 border border-[#2E4A8A]/10 dark:border-gray-700 rounded-2xl p-6"
             >
-              <h3 className="text-lg font-semibold text-[#0b1215] mb-6">
+              <h3 className="text-lg font-semibold text-[#0b1215] dark:text-white mb-6">
                 {t("languagesSection")}
               </h3>
               <div className="flex flex-col gap-6">
                 {languages.map((lang) => (
                   <div key={lang.language}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-[#0b1215]">
+                      <span className="font-medium text-[#0b1215] dark:text-white">
                         {lang.language}
                       </span>
-                      <span className="text-sm text-[#162456]/60">
+                      <span className="text-sm text-[#162456]/60 dark:text-gray-400">
                         {lang.level}
                       </span>
                     </div>
-                    <div className="h-2 bg-[#f8fbf8] rounded-full overflow-hidden">
+                    <div className="h-2 bg-[#f8fbf8] dark:bg-gray-700 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#2E4A8A] rounded-full transition-all duration-500"
+                        className="h-full bg-[#2E4A8A] dark:bg-blue-500 rounded-full transition-all duration-500"
                         style={{ width: `${lang.percentage}%` }}
                       />
                     </div>
@@ -219,18 +222,18 @@ export default function SkillsSection() {
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-[#2E4A8A]/10">
-                <h4 className="font-medium text-[#0b1215] mb-3">
+              <div className="mt-8 pt-6 border-t border-[#2E4A8A]/10 dark:border-gray-700">
+                <h4 className="font-medium text-[#0b1215] dark:text-white mb-3">
                   {t("highlights")}
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 text-[#2E4A8A] rounded-full font-medium">
+                  <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 dark:bg-blue-500/20 text-[#2E4A8A] dark:text-blue-400 rounded-full font-medium">
                     {t("autonomy")}
                   </span>
-                  <span className="px-3 py-1.5 text-sm bg-[#162456]/10 text-[#162456] rounded-full font-medium">
+                  <span className="px-3 py-1.5 text-sm bg-[#162456]/10 dark:bg-gray-700 text-[#162456] dark:text-gray-300 rounded-full font-medium">
                     {t("resultsFocus")}
                   </span>
-                  <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 text-[#2E4A8A] rounded-full font-medium">
+                  <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 dark:bg-blue-500/20 text-[#2E4A8A] dark:text-blue-400 rounded-full font-medium">
                     {t("problemSolving")}
                   </span>
                 </div>

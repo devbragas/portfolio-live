@@ -4,29 +4,31 @@ import { useState } from "react";
 import Link from "next/link";
 import { Container } from "./container";
 import { DevLogo } from "./dev-logo";
-import { Globe, Menu, X } from "lucide-react";
+import { Globe, Menu, Moon, Sun, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useLocaleStore } from "../../app/store/use-locale-store";
+import { useThemeStore } from "../../app/store/use-theme-store";
 
 const navLink = `
   relative text-sm font-semibold 
  text-[var(--color-foreground)]
-  hover:text-black
+  hover:text-black dark:hover:text-white
   after:absolute after:left-0 after:-bottom-1
   after:h-[2px] after:w-0
-  after:bg-black after:transition-all after:duration-300
+  after:bg-black dark:after:bg-white after:transition-all after:duration-300
   hover:after:w-full
    transition-all duration-300 hover:scale-105 group 
 `;
 
 const mobileNavLink = `
-  text-lg font-semibold text-[#0b1215] hover:text-[#2E4A8A] transition-colors
+  text-lg font-semibold text-[#0b1215] dark:text-white hover:text-[#2E4A8A] dark:hover:text-blue-400 transition-colors
 `;
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("header");
   const { locale, setLocale } = useLocaleStore();
+  const { theme, toggleTheme } = useThemeStore();
 
   const toggleLocale = () => {
     setLocale(locale === "pt" ? "en" : "pt");
@@ -66,12 +68,12 @@ export function Header() {
     hidden sm:flex items-center justify-center
     px-3 py-1.5 gap-1
     rounded-full
-    bg-gray-100/40 border border-gray-100/40
-    text-gray-800
+    bg-gray-100/40 dark:bg-gray-800/60 border border-gray-100/40 dark:border-gray-700
+    text-gray-800 dark:text-gray-200
     transition-all duration-200 ease-out
     hover:scale-105
     text-sm font-medium
-    hover:bg-gray-100/50
+    hover:bg-gray-100/50 dark:hover:bg-gray-800/80
   "
             type="button"
             onClick={toggleLocale}
@@ -84,40 +86,21 @@ export function Header() {
     hidden sm:flex items-center justify-center
     px-3 py-1.5 gap-1
     rounded-full
-    bg-gray-100/50 border border-gray-100/50
-    text-gray-800
+    bg-gray-100/50 dark:bg-gray-800/60 border border-gray-100/50 dark:border-gray-700
+    text-gray-800 dark:text-gray-200
     transition-all duration-200 ease-out
     hover:scale-105
     text-sm font-medium
-    hover:bg-gray-100/60
+    hover:bg-gray-100/60 dark:hover:bg-gray-800/80
   "
             type="button"
+            onClick={toggleTheme}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="12" cy="12" r="4" />
-              <path d="M12 2v2" />
-              <path d="M12 20v2" />
-              <path d="m4.93 4.93 1.41 1.41" />
-              <path d="m17.66 17.66 1.41 1.41" />
-              <path d="M2 12h2" />
-              <path d="M20 12h2" />
-              <path d="m6.34 17.66-1.41 1.41" />
-              <path d="m19.07 4.93-1.41 1.41" />
-            </svg>
+            {theme === "light" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
           <button
-            className="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100/50 transition-colors"
+            className="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100/50 dark:hover:bg-gray-800/50 transition-colors dark:text-white"
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
@@ -128,7 +111,7 @@ export function Header() {
       </Container>
 
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white/95 backdrop-blur-md z-40">
+        <div className="md:hidden fixed inset-0 top-16 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-40">
           <nav className="flex flex-col items-center justify-center gap-8 pt-12">
             <Link
               className={mobileNavLink}
@@ -161,7 +144,7 @@ export function Header() {
 
             <div className="flex items-center gap-3 mt-4">
               <button
-                className="flex items-center justify-center px-4 py-2 gap-1 rounded-full bg-gray-100/60 border border-gray-200 text-gray-800 text-sm font-medium"
+                className="flex items-center justify-center px-4 py-2 gap-1 rounded-full bg-gray-100/60 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium"
                 type="button"
                 onClick={toggleLocale}
               >

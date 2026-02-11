@@ -10,7 +10,10 @@ export function ContactSection() {
   const t = useTranslations("contact");
 
   return (
-    <section id="contact" className="py-16 lg:py-20 px-4 lg:px-0 bg-background">
+    <section
+      id="contact"
+      className="py-16 lg:py-20 px-4 lg:px-0 bg-background dark:bg-gray-900 transition-colors duration-300"
+    >
       <Container>
         <div className="flex flex-col items-center text-center">
           <motion.h2
@@ -18,7 +21,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-bold mb-4 text-[#162456]"
+            className="text-3xl sm:text-4xl font-bold mb-4 text-[#162456] dark:text-white"
           >
             {t("title")}
           </motion.h2>
@@ -27,7 +30,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-[#162456]/70 max-w-xl mb-8"
+            className="text-[#162456]/70 dark:text-gray-400 max-w-xl mb-8"
           >
             {t("subtitle")}
           </motion.p>
@@ -56,7 +59,7 @@ export function ContactSection() {
             </Link>
             <Link
               href="mailto:enzovasoncelosbraga@gmail.com"
-              className="flex items-center justify-center gap-2 border border-[#2E4A8A] hover:border-[#162456] text-[#0b1215] font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105"
+              className="flex items-center justify-center gap-2 border border-[#2E4A8A] dark:border-blue-500 hover:border-[#162456] dark:hover:border-blue-400 text-[#0b1215] dark:text-white font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/20 hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +84,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-[#162456]/60 text-sm mb-6"
+            className="text-[#162456]/60 dark:text-gray-400 text-sm mb-6"
           >
             {t("findMe")}
           </motion.p>
@@ -95,16 +98,18 @@ export function ContactSection() {
             >
               <Link
                 href="https://github.com/devbragas"
-                className="flex items-center gap-4 bg-white/80 border border-[#2E4A8A]/20 hover:border-[#2E4A8A]/50 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105 group"
+                className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] bg-[#557cd827] rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <Github size={14} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-[#0b1215] font-semibold">
+                  <h3 className="text-[#0b1215] dark:text-white font-semibold">
                     {t("github")}
                   </h3>
-                  <p className="text-[#162456]/60 text-sm">{t("githubDesc")}</p>
+                  <p className="text-[#162456]/60 dark:text-gray-400 text-sm">
+                    {t("githubDesc")}
+                  </p>
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +119,7 @@ export function ContactSection() {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  className="text-[#2E4A8A]/50 group-hover:text-[#2E4A8A] transition-colors"
+                  className="text-[#2E4A8A]/50 dark:text-blue-400/50 group-hover:text-[#2E4A8A] dark:group-hover:text-blue-400 transition-colors"
                 >
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
@@ -129,16 +134,16 @@ export function ContactSection() {
             >
               <Link
                 href="https://linkedin.com/in/enzovasconcelos"
-                className="flex items-center gap-4 bg-white/80 border border-[#2E4A8A]/20 hover:border-[#2E4A8A]/50 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105 group"
+                className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] bg-[#557cd827] rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <Linkedin size={20} />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-[#0b1215] font-semibold">
+                  <h3 className="text-[#0b1215] dark:text-white font-semibold">
                     {t("linkedin")}
                   </h3>
-                  <p className="text-[#162456]/60 text-sm">
+                  <p className="text-[#162456]/60 dark:text-gray-400 text-sm">
                     {t("linkedinDesc")}
                   </p>
                 </div>
@@ -150,7 +155,7 @@ export function ContactSection() {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  className="text-[#2E4A8A]/50 group-hover:text-[#2E4A8A] transition-colors"
+                  className="text-[#2E4A8A]/50 dark:text-blue-400/50 group-hover:text-[#2E4A8A] dark:group-hover:text-blue-400 transition-colors"
                 >
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
@@ -165,9 +170,9 @@ export function ContactSection() {
             >
               <Link
                 href="mailto:enzovasoncelosbraga@gmail.com"
-                className="flex items-center gap-4 bg-white/80 border border-[#2E4A8A]/20 hover:border-[#2E4A8A]/50 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 hover:scale-105 group"
+                className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] bg-[#557cd827] rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -184,10 +189,12 @@ export function ContactSection() {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <h3 className="text-[#0b1215] font-semibold">
+                  <h3 className="text-[#0b1215] dark:text-white font-semibold">
                     {t("emailTitle")}
                   </h3>
-                  <p className="text-[#162456]/60 text-sm">{t("emailDesc")}</p>
+                  <p className="text-[#162456]/60 dark:text-gray-400 text-sm">
+                    {t("emailDesc")}
+                  </p>
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +204,7 @@ export function ContactSection() {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  className="text-[#2E4A8A]/50 group-hover:text-[#2E4A8A] transition-colors"
+                  className="text-[#2E4A8A]/50 dark:text-blue-400/50 group-hover:text-[#2E4A8A] dark:group-hover:text-blue-400 transition-colors"
                 >
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
@@ -207,7 +214,7 @@ export function ContactSection() {
         </div>
       </Container>
 
-      <div className="mt-20 h-px w-full bg-linear-to-r from-transparent via-[#2E4A8A]/30 to-transparent" />
+      <div className="mt-20 h-px w-full bg-gradient-to-r from-transparent via-[#2E4A8A]/30 dark:via-blue-500/30 to-transparent" />
     </section>
   );
 }

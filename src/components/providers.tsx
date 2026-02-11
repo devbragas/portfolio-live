@@ -2,6 +2,7 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useLocaleStore } from "../app/store/use-locale-store";
+import { useThemeStore } from "../app/store/use-theme-store";
 import { useEffect, useState } from "react";
 import { NextIntlClientProvider } from "next-intl";
 
@@ -9,6 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const queryClient = new QueryClient();
 
   const { locale } = useLocaleStore();
+  const { theme } = useThemeStore();
   const [messages, setMessages] = useState<Record<string, unknown> | null>(
     null,
   );
@@ -18,6 +20,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
       .then((mod) => setMessages(mod.default))
       .catch((err) => console.error("Failed to load messages:", err));
   }, [locale]);
+
+  useEffect(() => {
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+  }, [theme]);
 
   if (!messages) {
     return null;
