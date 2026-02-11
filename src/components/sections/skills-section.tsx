@@ -1,3 +1,7 @@
 export default function SkillsSection() {
-  return <h1></h1>;
+  return (
+    <div id="skills" className="py-3.5 h-svh">
+      receba
+    </div>
+  );
 }
