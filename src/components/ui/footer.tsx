@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { DevLogo } from "./dev-logo";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const handleScroll = (id: string) => {
   const element = document.getElementById(id);
@@ -22,16 +22,16 @@ export function Footer() {
   return (
     <footer className="py-10 bg-[#eef3ee]">
       <Container>
-        <div className="flex gap-5 place-content-between">
+        <div className="flex gap-5 place-content-between pb-8">
           <div className="flex-1 flex-col">
             <DevLogo />
-            <p>
+            <p className="text-sm">
               Desenvolvedor Full Stack criando experiências digitais com código
               limpo e design moderno.
             </p>
           </div>
-          <div className="flex-1 flex-col gap-2">
-            <h2 className="font-bold">Navegação</h2>
+          <div className="flex-1 flex flex-col gap-3">
+            <h2 className="font-bold  text-(--secondary-text)">Navegação</h2>
             <div className="flex justify-start items-start flex-col gap-1 text-sm">
               <button
                 className="nav-btn"
@@ -65,15 +65,15 @@ export function Footer() {
               </button>
             </div>
           </div>
-          <div className="flex-1 flex-col ">
-            <h2 className="font-bold">Conecte-se</h2>
+          <div className="flex-1 flex flex-col gap-3">
+            <h2 className="font-bold text-(--secondary-text)">Conecte-se</h2>
             <ul className="flex flex-col gap-1 text-sm">
               <Link href="https://github.com/devbragas" className="nav-btn">
                 <li className="flex items-center gap-2.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
@@ -89,8 +89,8 @@ export function Footer() {
                 <li className="flex items-center gap-2.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
@@ -104,14 +104,14 @@ export function Footer() {
                 className="nav-btn"
               >
                 <li className="flex items-center gap-2.5">
-                  <Mail size={16} />
+                  <Mail size={14} />
                   Email
                 </li>
               </Link>
             </ul>
           </div>
         </div>
-        <div className="flex place-content-between text-sm border-t border-white/50 py-6">
+        <div className="flex place-content-between text-xs border-t border-white/50 pt-6">
           <p>© 2026 Enzo Vasconcelos Braga. Todos os direitos reservados.</p>
           <p>Feito com Next.js & Tailwind CSS</p>
         </div>
