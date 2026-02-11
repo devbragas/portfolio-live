@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./container";
 import { DevLogo } from "./dev-logo";
+import { Globe } from "lucide-react";
 
 const navLink = `
   relative text-sm font-semibold 
@@ -43,13 +44,34 @@ export function Header() {
         </nav>
         <div className="ml-auto flex items-center gap-2">
           <button
-            className="flex items-center justify-center w-9 h-9 rounded-lg cursor-pointer border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200 text-sm font-medium"
+            className="
+    flex items-center justify-center
+    px-3 py-1.5 gap-1
+    rounded-full
+    bg-gray-100/40 border border-gray-100/40
+    text-gray-800
+    transition-all duration-200 ease-out
+    hover:scale-105
+    text-sm font-medium
+    hover:bg-gray-100/50
+  "
             type="button"
           >
+            <Globe size={12} />
             PT
           </button>
           <button
-            className="flex items-center justify-center w-9 h-9 rounded-lg cursor-pointer border border-gray-300 bg-white/80 hover:bg-gray-100 transition-all duration-200"
+            className="
+    flex items-center justify-center
+    px-3 py-1.5 gap-1
+    rounded-full
+    bg-gray-100/50 border border-gray-100/50
+    text-gray-800
+    transition-all duration-200 ease-out
+    hover:scale-105
+    text-sm font-medium
+    hover:bg-gray-100/60
+  "
             type="button"
           >
             <svg
