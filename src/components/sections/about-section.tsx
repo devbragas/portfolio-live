@@ -1,7 +1,7 @@
 export function AboutSection() {
   return (
-    <div id="aboutme" className="py-3.5 h-svh">
-      receba
-    </div>
+    <section id="aboutme" className="py-3.5 h-svh">
+      te amo meu amorzão S2
+    </section>
   );
 }
