@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "role": "Software Developer",
+    "architect": "Software Architect",
+    "name": "Enzo Vasconcelos",
+    "typing1": "Junior Fullstack Developer",
+    "typing2": "Junior Software Architect",
+    "typing3": "Software Engineer",
+    "description": "Software Developer with experience in software development, interface design and project management.",
+    "location": "Sobral, Brazil"
+  },
+  "about": {
+    "title": "Who Am I?",
+    "greeting": "Hey, I'm Enzo.",
+    "intro": "I'm a Full Stack Developer focused on building high-performance web applications and scalable interfaces.",
+    "paragraph1": "I find it easy to learn new technologies, work in teams, and tackle technical challenges with an analytical mindset. I value clear communication, collaboration, and continuous improvement. I'm always looking to grow, take on new challenges, and participate in projects that make a real difference.",
+    "paragraph2": "I like building applications that not only work but are well-structured, performant, and pleasant to use. For me, code isn't just about logic—it's also intimately connected to the business and the application's infrastructure.",
+    "paragraph3": "After the pandemic, I enrolled in Computer Engineering to formalize my knowledge. Since then, I've had the opportunity to work on high-impact projects, including solutions for union areas in the State of Alagoas and a healthcare project that helped over 1600 doctors in the State.",
+    "fullstack": "Full Stack",
+    "fullstackDesc": "Complete development",
+    "university": "UFC",
+    "universityDesc": "Computer Engineering"
+  },
+  "skills": {
+    "title": "Skills & Knowledge",
+    "subtitle": "Technologies and competencies I use to create high-impact solutions",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "styling": "Styling",
+    "infrastructure": "Infrastructure",
+    "database": "Database",
+    "others": "Others",
+    "softSkills": "Soft Skills",
+    "communication": "Communication",
+    "communicationDesc": "Effective communication between technical and product areas",
+    "collaboration": "Collaboration",
+    "collaborationDesc": "Experience with agile methodologies (Scrum, Kanban)",
+    "continuousLearning": "Continuous Learning",
+    "continuousLearningDesc": "Constant adaptation to new technologies",
+    "languagesSection": "Languages",
+    "portuguese": "Portuguese",
+    "native": "Native",
+    "english": "English",
+    "advanced": "Advanced (B2)",
+    "highlights": "Highlights",
+    "autonomy": "Autonomy",
+    "resultsFocus": "Results Focus",
+    "problemSolving": "Problem-Solving"
+  },
+  "contact": {
+    "title": "Let's Work Together?",
+    "subtitle": "I'm always open to new projects and opportunities. Get in touch and let's turn your idea into reality.",
+    "whatsapp": "Call on WhatsApp",
+    "email": "Send Email",
+    "findMe": "or find me on social media",
+    "github": "GitHub",
+    "githubDesc": "My projects and open source code",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "My professional journey",
+    "emailTitle": "E-mail",
+    "emailDesc": "For proposals and partnerships"
+  },
+  "footer": {
+    "description": "Full Stack Developer creating digital experiences with clean code and modern design.",
+    "navigation": "Navigation",
+    "skills": "Skills",
+    "aboutMe": "About me",
+    "academic": "Academic",
+    "contact": "Contact",
+    "connect": "Connect",
+    "copyright": "© 2026 Enzo Vasconcelos Braga. All rights reserved.",
+    "madeWith": "Made with Next.js & Tailwind CSS"
+  },
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
+}

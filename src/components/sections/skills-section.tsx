@@ -12,60 +12,63 @@ import {
   Server,
   Users,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const technicalSkills = [
+const technicalSkillsData = [
   {
-    category: "Linguagens",
+    categoryKey: "languages",
     icon: Code2,
     items: ["JavaScript", "TypeScript"],
-    level: "Avançado",
+    levelKey: "advanced",
   },
   {
-    category: "Frameworks",
+    categoryKey: "frameworks",
     icon: Layers,
     items: ["React.js", "Next.js", "Nest.js", "React Native"],
   },
   {
-    category: "Estilização",
+    categoryKey: "styling",
     icon: Palette,
     items: ["Tailwind CSS", "Styled Components", "Shadcn/UI"],
   },
   {
-    category: "Infraestrutura",
+    categoryKey: "infrastructure",
     icon: Server,
     items: ["Docker", "Git", "CI/CD", "TDD", "SOLID"],
   },
   {
-    category: "Banco de Dados",
+    categoryKey: "database",
     icon: Database,
     items: ["MySQL", "PostgreSQL", "MongoDB"],
   },
   {
-    category: "Outros",
+    categoryKey: "others",
     icon: Globe,
     items: ["REST API", "JWT Auth", "Vercel"],
   },
 ];
 
-const softSkills = [
-  {
-    icon: MessageSquare,
-    title: "Comunicação",
-    description: "Comunicação efetiva entre áreas técnicas e de produto",
-  },
-  {
-    icon: Users,
-    title: "Colaboração",
-    description: "Experiência com metodologias ágeis (Scrum, Kanban)",
-  },
-];
-
-const languages = [
-  { language: "Português", level: "Nativo", percentage: 100 },
-  { language: "Inglês", level: "Avançado (B2)", percentage: 85 },
-];
-
 export default function SkillsSection() {
+  const t = useTranslations("skills");
+
+  const softSkills = [
+    {
+      icon: MessageSquare,
+      title: t("communication"),
+      description: t("communicationDesc"),
+    },
+    {
+      icon: Users,
+      title: t("collaboration"),
+      description: t("collaborationDesc"),
+    },
+  ];
+
+  const languages = [
+    { language: t("portuguese"), level: t("native"), percentage: 100 },
+    { language: t("english"), level: t("advanced"), percentage: 85 },
+  ];
+
   return (
     <section id="skills" className="py-16 lg:py-20 px-4 lg:px-0 bg-background">
       <Container>
@@ -78,19 +81,18 @@ export default function SkillsSection() {
             className="text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456]">
-              Habilidades & Conhecimentos
+              {t("title")}
             </h2>
             <p className="text-[#162456]/70 mt-4 max-w-2xl mx-auto">
-              Tecnologias e competências que utilizo para criar soluções de alto
-              impacto
+              {t("subtitle")}
             </p>
           </motion.div>
 
           {/* Technical Skills Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {technicalSkills.map((skill, index) => (
+            {technicalSkillsData.map((skill, index) => (
               <motion.div
-                key={skill.category}
+                key={skill.categoryKey}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -103,11 +105,11 @@ export default function SkillsSection() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0b1215]">
-                      {skill.category}
+                      {t(skill.categoryKey)}
                     </h3>
-                    {skill.level && (
+                    {skill.levelKey && (
                       <span className="text-xs text-[#2E4A8A] font-medium">
-                        {skill.level}
+                        {t(skill.levelKey)}
                       </span>
                     )}
                   </div>
@@ -137,12 +139,12 @@ export default function SkillsSection() {
               className="bg-white border border-[#2E4A8A]/10 rounded-2xl p-6"
             >
               <h3 className="text-lg font-semibold text-[#0b1215] mb-6">
-                Soft Skills
+                {t("softSkills")}
               </h3>
               <div className="flex flex-col gap-4">
                 {softSkills.map((skill) => (
                   <div key={skill.title} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center shrink-0">
                       <skill.icon className="w-5 h-5 text-[#2E4A8A]" />
                     </div>
                     <div>
@@ -156,7 +158,7 @@ export default function SkillsSection() {
                   </div>
                 ))}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-[#2E4A8A]/10 flex items-center justify-center shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -175,10 +177,10 @@ export default function SkillsSection() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#0b1215]">
-                      Aprendizado Contínuo
+                      {t("continuousLearning")}
                     </h4>
                     <p className="text-sm text-[#162456]/60">
-                      Adaptação constante a novas tecnologias
+                      {t("continuousLearningDesc")}
                     </p>
                   </div>
                 </div>
@@ -194,7 +196,7 @@ export default function SkillsSection() {
               className="bg-white border border-[#2E4A8A]/10 rounded-2xl p-6"
             >
               <h3 className="text-lg font-semibold text-[#0b1215] mb-6">
-                Idiomas
+                {t("languagesSection")}
               </h3>
               <div className="flex flex-col gap-6">
                 {languages.map((lang) => (
@@ -218,16 +220,18 @@ export default function SkillsSection() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-[#2E4A8A]/10">
-                <h4 className="font-medium text-[#0b1215] mb-3">Destaques</h4>
+                <h4 className="font-medium text-[#0b1215] mb-3">
+                  {t("highlights")}
+                </h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 text-[#2E4A8A] rounded-full font-medium">
-                    Autonomia
+                    {t("autonomy")}
                   </span>
                   <span className="px-3 py-1.5 text-sm bg-[#162456]/10 text-[#162456] rounded-full font-medium">
-                    Foco em Resultados
+                    {t("resultsFocus")}
                   </span>
                   <span className="px-3 py-1.5 text-sm bg-[#2E4A8A]/10 text-[#2E4A8A] rounded-full font-medium">
-                    Problem-Solving
+                    {t("problemSolving")}
                   </span>
                 </div>
               </div>

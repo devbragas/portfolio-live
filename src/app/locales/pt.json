@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "role": "Desenvolvedor de Software",
+    "architect": "Arquiteto de Software",
+    "name": "Enzo Vasconcelos",
+    "typing1": "Desenvolvedor Fullstack Júnior",
+    "typing2": "Arquiteto de Software Júnior",
+    "typing3": "Engenheiro de Software",
+    "description": "Desenvolvedor de Software com experiência em desenvolvimento de software, design de interfaces e gerenciamento de projetos.",
+    "location": "Sobral, Brasil"
+  },
+  "about": {
+    "title": "Quem Sou Eu?",
+    "greeting": "Hey, eu sou o Enzo.",
+    "intro": "Sou Desenvolvedor Full Stack com foco em construir aplicações web de alta performance e interfaces escaláveis.",
+    "paragraph1": "Tenho facilidade em aprender novas tecnologias, trabalhar em equipe e encarar desafios técnicos com mentalidade analítica. Valorizo comunicação clara, colaboração e melhoria contínua. Estou sempre buscando crescer, assumir novos desafios e participar de projetos que façam diferença de verdade.",
+    "paragraph2": "Gosto de construir aplicações que não apenas funcionem, mas que sejam bem estruturadas, performáticas e agradáveis de usar. Para mim, código não envolve apenas lógica, mas também envolve estar intimamente ligado com o negócio e a infraestrutura da aplicação.",
+    "paragraph3": "Após a pandemia, ingressei na faculdade de Engenharia da Computação para formalizar meu conhecimento. Desde então, tive a oportunidade de trabalhar em projetos de alto impacto, incluindo soluções para áreas sindicalistas no Estado de Alagoas e um projeto no setor de saúde que auxiliou mais de 1600 médicos no Estado.",
+    "fullstack": "Full Stack",
+    "fullstackDesc": "Desenvolvimento completo",
+    "university": "UFC",
+    "universityDesc": "Engenharia de Computação"
+  },
+  "skills": {
+    "title": "Habilidades & Conhecimentos",
+    "subtitle": "Tecnologias e competências que utilizo para criar soluções de alto impacto",
+    "languages": "Linguagens",
+    "frameworks": "Frameworks",
+    "styling": "Estilização",
+    "infrastructure": "Infraestrutura",
+    "database": "Banco de Dados",
+    "others": "Outros",
+    "softSkills": "Soft Skills",
+    "communication": "Comunicação",
+    "communicationDesc": "Comunicação efetiva entre áreas técnicas e de produto",
+    "collaboration": "Colaboração",
+    "collaborationDesc": "Experiência com metodologias ágeis (Scrum, Kanban)",
+    "continuousLearning": "Aprendizado Contínuo",
+    "continuousLearningDesc": "Adaptação constante a novas tecnologias",
+    "languagesSection": "Idiomas",
+    "portuguese": "Português",
+    "native": "Nativo",
+    "english": "Inglês",
+    "advanced": "Avançado (B2)",
+    "highlights": "Destaques",
+    "autonomy": "Autonomia",
+    "resultsFocus": "Foco em Resultados",
+    "problemSolving": "Problem-Solving"
+  },
+  "contact": {
+    "title": "Vamos Trabalhar Juntos?",
+    "subtitle": "Estou sempre aberto a novos projetos e oportunidades. Entre em contato e vamos transformar sua ideia em realidade.",
+    "whatsapp": "Chamar no WhatsApp",
+    "email": "Enviar E-mail",
+    "findMe": "ou me encontre nas redes",
+    "github": "GitHub",
+    "githubDesc": "Meus projetos e código open source",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "Minha trajetória profissional",
+    "emailTitle": "E-mail",
+    "emailDesc": "Para propostas e parcerias"
+  },
+  "footer": {
+    "description": "Desenvolvedor Full Stack criando experiências digitais com código limpo e design moderno.",
+    "navigation": "Navegação",
+    "skills": "Habilidades",
+    "aboutMe": "Sobre mim",
+    "academic": "Acadêmico",
+    "contact": "Contato",
+    "connect": "Conecte-se",
+    "copyright": "© 2026 Enzo Vasconcelos Braga. Todos os direitos reservados.",
+    "madeWith": "Feito com Next.js & Tailwind CSS"
+  },
+  "header": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "contact": "Contato"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { AboutSection } from "../components/sections/about-section";
 import { ContactSection } from "../components/sections/contact-section";
 import { ExperienceSection } from "../components/sections/experience-section";

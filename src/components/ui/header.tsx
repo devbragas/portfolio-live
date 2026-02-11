@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Container } from "./container";
 import { DevLogo } from "./dev-logo";
 import { Globe, Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useLocaleStore } from "../../app/store/use-locale-store";
 
 const navLink = `
   relative text-sm font-semibold 
@@ -23,6 +25,12 @@ const mobileNavLink = `
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("header");
+  const { locale, setLocale } = useLocaleStore();
+
+  const toggleLocale = () => {
+    setLocale(locale === "pt" ? "en" : "pt");
+  };
 
   return (
     <header
@@ -37,24 +45,22 @@ export function Header() {
       <Container className="relative flex items-center">
         <DevLogo />
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
           <Link className={navLink} href="#about">
-            Sobre
+            {t("about")}
           </Link>
           <Link className={navLink} href="#skills">
-            Habilidades
+            {t("skills")}
           </Link>
           <Link className={navLink} href="#experience">
-            Experiência
+            {t("experience")}
           </Link>
           <Link className={navLink} href="#contact">
-            Contato
+            {t("contact")}
           </Link>
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          {/* Desktop buttons */}
           <button
             className="
     hidden sm:flex items-center justify-center
@@ -68,9 +74,10 @@ export function Header() {
     hover:bg-gray-100/50
   "
             type="button"
+            onClick={toggleLocale}
           >
             <Globe size={12} />
-            PT
+            {locale.toUpperCase()}
           </button>
           <button
             className="
@@ -109,7 +116,6 @@ export function Header() {
             </svg>
           </button>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100/50 transition-colors"
             type="button"
@@ -121,7 +127,6 @@ export function Header() {
         </div>
       </Container>
 
-      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-0 top-16 bg-white/95 backdrop-blur-md z-40">
           <nav className="flex flex-col items-center justify-center gap-8 pt-12">
@@ -130,37 +135,38 @@ export function Header() {
               href="#about"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Sobre
+              {t("about")}
             </Link>
             <Link
               className={mobileNavLink}
               href="#skills"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Habilidades
+              {t("skills")}
             </Link>
             <Link
               className={mobileNavLink}
               href="#experience"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Experiência
+              {t("experience")}
             </Link>
             <Link
               className={mobileNavLink}
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contato
+              {t("contact")}
             </Link>
 
             <div className="flex items-center gap-3 mt-4">
               <button
                 className="flex items-center justify-center px-4 py-2 gap-1 rounded-full bg-gray-100/60 border border-gray-200 text-gray-800 text-sm font-medium"
                 type="button"
+                onClick={toggleLocale}
               >
                 <Globe size={14} />
-                PT
+                {locale.toUpperCase()}
               </button>
             </div>
           </nav>
