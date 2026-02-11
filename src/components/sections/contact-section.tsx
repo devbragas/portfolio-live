@@ -15,7 +15,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#27C39F] to-[#2E4A8A] bg-clip-text text-transparent"
+            className="text-4xl font-bold mb-4 text-[#162456]"
           >
             Vamos Trabalhar Juntos?
           </motion.h2>

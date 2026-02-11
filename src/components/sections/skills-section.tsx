@@ -67,7 +67,7 @@ const languages = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="pt-52 pb-20 bg-background">
+    <section id="skills" className="py-20 pb-20 bg-background">
       <Container>
         <div className="flex flex-col gap-12">
           <motion.div

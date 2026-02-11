@@ -6,7 +6,7 @@ import { Code2, GraduationCap, Linkedin, Github } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="aboutme" className="py-20 bg-background">
+    <section id="aboutme" className="pt-52 bg-background">
       <Container>
         <div className="flex flex-col gap-12">
           <motion.div
@@ -16,7 +16,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mt-2 text-[#0b1215]">
+            <h2 className="text-4xl font-bold mt-2 text-[#162456]">
               Quem Sou Eu?
             </h2>
           </motion.div>
@@ -59,7 +59,7 @@ export function AboutSection() {
                 oportunidade de trabalhar em projetos de alto impacto, incluindo
                 soluções para áreas sindicalistas no Estado de Alagoas e um
                 projeto no setor de saúde que auxiliou mais de 1600 médicos no
-                Estado de Alagoas.
+                Estado.
               </p>
             </motion.div>
 
