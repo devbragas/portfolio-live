@@ -8,6 +8,8 @@
   --secondary-text: #162456;
   --tertiary-text: #2E4A8A;
   --bg-primary: #557cd827;
+  --foreground: #0a0a0a;
+  --muted: #f4f4f5;
   --muted-foreground: #71717a;
   --card: #fff;
   --border: #e4e4e7;
@@ -24,6 +26,8 @@
   --color-background: var(--background);
   --color-foreground: var(--main-text);
   --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-foreground: var(--foreground);
 }
 
 @media (prefers-color-scheme: dark) {

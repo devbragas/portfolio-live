@@ -94,6 +94,7 @@ export function AboutSection() {
             </div>
           </div>
         </div>
+        <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-[#2E4A8A]/30 dark:via-blue-500/30 to-transparent" />
       </Container>
     </section>
   );

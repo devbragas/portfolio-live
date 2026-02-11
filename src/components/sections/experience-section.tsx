@@ -20,7 +20,10 @@ export function ExperienceSection() {
             {t("subtitle")}
           </p>
         </div>
-        <div className="rounded-2xl border border-border/80 bg-(--card) p-6 sm:p-8 transition-all duration-300">
+        <div
+          className="rounded-2xl border border-border/80 bg-(--card) p-6 sm:p-8 transition-all duration-300 hover:shadow-lg
+  hover:shadow-blue-400/30"
+        >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <h3 className="text-lg font-bold sm:text-xl">{t("role")}</h3>
@@ -42,10 +45,19 @@ export function ExperienceSection() {
             {t("description")}
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
-            <TechTag>REceba</TechTag>
+            <TechTag>React</TechTag>
+            <TechTag>Next.js</TechTag>
+            <TechTag>TypeScript</TechTag>
+            <TechTag>Java</TechTag>
+            <TechTag>SpringBoot</TechTag>
+            <TechTag>PosgtreSQL</TechTag>
+            <TechTag>AWS</TechTag>
+            <TechTag>Git</TechTag>
+            <TechTag>Scrum</TechTag>
           </div>
         </div>
       </div>
+      <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-[#2E4A8A]/30 dark:via-blue-500/30 to-transparent" />
     </section>
   );
 }
