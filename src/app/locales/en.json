@@ -49,6 +49,15 @@
     "resultsFocus": "Results Focus",
     "problemSolving": "Problem-Solving"
   },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "role": "Fullstack Developer",
+    "company": "Tech Analytics Systems",
+    "description": "Building full-stack web solutions for the international market. Migrated a legacy Angular backoffice to React and Next.js with multitenant architecture. Called on-site to Dubai to deliver a critical project in record time.",
+    "date": "April 2024 - February 2025",
+    "location": "Maceió, Alagoas · Remote"
+  },
   "contact": {
     "title": "Let's Work Together?",
     "subtitle": "I'm always open to new projects and opportunities. Get in touch and let's turn your idea into reality.",

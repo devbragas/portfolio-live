@@ -91,7 +91,6 @@ export default function SkillsSection() {
             </p>
           </motion.div>
 
-          {/* Technical Skills Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {technicalSkillsData.map((skill, index) => (
               <motion.div
@@ -131,9 +130,7 @@ export default function SkillsSection() {
             ))}
           </div>
 
-          {/* Soft Skills & Languages */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-            {/* Soft Skills */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -190,7 +187,6 @@ export default function SkillsSection() {
               </div>
             </motion.div>
 
-            {/* Languages */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

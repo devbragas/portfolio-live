@@ -7,6 +7,10 @@
   --main-text: #0b1215;
   --secondary-text: #162456;
   --tertiary-text: #2E4A8A;
+  --bg-primary: #557cd827;
+  --muted-foreground: #71717a;
+  --card: #fff;
+  --border: #e4e4e7;
 }
 
 .dark {
@@ -19,6 +23,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--main-text);
+  --color-border: var(--border);
 }
 
 @media (prefers-color-scheme: dark) {

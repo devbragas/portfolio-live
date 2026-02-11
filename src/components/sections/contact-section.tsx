@@ -100,7 +100,7 @@ export function ContactSection() {
                 href="https://github.com/devbragas"
                 className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-(--bg-primary) dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <Github size={14} />
                 </div>
                 <div className="text-left">
@@ -136,7 +136,7 @@ export function ContactSection() {
                 href="https://linkedin.com/in/enzovasconcelos"
                 className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-(--bg-primary) dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <Linkedin size={20} />
                 </div>
                 <div className="text-left">
@@ -172,7 +172,7 @@ export function ContactSection() {
                 href="mailto:enzovasoncelosbraga@gmail.com"
                 className="flex items-center gap-4 bg-white/80 dark:bg-gray-800/80 border border-[#2E4A8A]/20 dark:border-gray-700 hover:border-[#2E4A8A]/50 dark:hover:border-gray-600 rounded-xl px-6 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-[#2E4A8A]/20 dark:hover:shadow-blue-500/10 hover:scale-105 group"
               >
-                <div className="text-[#2E4A8A] dark:text-blue-400 bg-[#557cd827] dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                <div className="text-[#2E4A8A] dark:text-blue-400 bg-(--bg-primary) dark:bg-blue-500/20 rounded-xl flex h-10 w-10 items-center justify-center bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
