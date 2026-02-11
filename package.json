@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "i18": "^0.0.6",
+    "i18next": "^25.8.5",
     "lucide-react": "^0.563.0",
     "motion": "^12.34.0",
     "next": "^16.1.6",
+    "next-intl": "^4.8.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
