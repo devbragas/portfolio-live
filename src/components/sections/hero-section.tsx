@@ -7,9 +7,11 @@ import { HeroButton } from "../ui/hero-button";
 import { MapPin } from "lucide-react";
 import { HeroBackground } from "../ui/receba";
 import { useTranslations } from "next-intl";
+import { useLocaleStore } from "../../app/store/use-locale-store";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const { locale } = useLocaleStore();
 
   return (
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 pt-24 lg:pt-36 px-4 lg:px-0">
@@ -54,6 +56,7 @@ export default function HeroSection() {
           className="text-sm"
         >
           <TypeAnimation
+            key={t("typing1")}
             sequence={[
               t("typing1"),
               1000,
@@ -99,7 +102,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-        className="relative shrink-0"
+        className="relative flex-shrink-0"
       >
         <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-(--tertiary-text)/30 shadow-xl">
           <Image
