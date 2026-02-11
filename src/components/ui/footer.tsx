@@ -25,14 +25,14 @@ export function Footer() {
   return (
     <footer className="py-8 lg:py-10 px-4 lg:px-0 bg-[#eef3ee] dark:bg-gray-900 transition-colors duration-300">
       <Container>
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-5 place-content-between pb-8">
+        <div className="flex flex-col sm:flex-row sm:items-start gap-8 sm:gap-5 place-content-between pb-8">
           <div className="flex-1 flex flex-col">
             <DevLogo />
             <p className="text-sm mt-2 dark:text-gray-400">
               {t("description")}
             </p>
           </div>
-          <div className="flex-1 flex flex-col gap-3">
+          <div className="flex-1 flex flex-col gap-3 sm:mt-5">
             <h2 className="font-bold text-(--secondary-text) dark:text-white">
               {t("navigation")}
             </h2>
@@ -64,7 +64,7 @@ export function Footer() {
               </button>
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-3">
+          <div className="flex-1 flex flex-col gap-3 sm:mt-5">
             <h2 className="font-bold text-(--secondary-text) dark:text-white">
               {t("connect")}
             </h2>
