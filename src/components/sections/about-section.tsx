@@ -6,7 +6,7 @@ import { Code2, GraduationCap, Linkedin, Github } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="aboutme" className="pt-52 bg-background">
+    <section id="about" className="pt-52 bg-background">
       <Container>
         <div className="flex flex-col gap-12">
           <motion.div

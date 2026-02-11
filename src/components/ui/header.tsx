@@ -28,8 +28,8 @@ export function Header() {
       <Container className="relative flex items-center">
         <DevLogo />
         <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6">
-          <Link className={navLink} href="#aboutme">
-            Sobre mim
+          <Link className={navLink} href="#about">
+            Sobre
           </Link>
           <Link className={navLink} href="#skills">
             Habilidades
