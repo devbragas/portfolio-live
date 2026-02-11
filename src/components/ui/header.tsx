@@ -35,84 +35,86 @@ export function Header() {
   };
 
   return (
-    <header
-      className="
-      fixed top-0 left-0 right-0 z-50
-      h-16
-      flex items-center
-      bg-transparent backdrop-blur-sm
-      px-4 lg:px-0
-      "
-    >
-      <Container className="relative flex items-center">
-        <DevLogo />
+    <>
+      <header
+        className="
+        fixed top-0 left-0 right-0 z-50
+        h-16
+        flex items-center
+        bg-transparent backdrop-blur-sm
+        px-4 lg:px-0
+        "
+      >
+        <Container className="relative flex items-center">
+          <DevLogo />
 
-        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
-          <Link className={navLink} href="#about">
-            {t("about")}
-          </Link>
-          <Link className={navLink} href="#skills">
-            {t("skills")}
-          </Link>
-          <Link className={navLink} href="#experience">
-            {t("experience")}
-          </Link>
-          <Link className={navLink} href="#contact">
-            {t("contact")}
-          </Link>
-        </nav>
+          <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
+            <Link className={navLink} href="#about">
+              {t("about")}
+            </Link>
+            <Link className={navLink} href="#skills">
+              {t("skills")}
+            </Link>
+            <Link className={navLink} href="#experience">
+              {t("experience")}
+            </Link>
+            <Link className={navLink} href="#contact">
+              {t("contact")}
+            </Link>
+          </nav>
 
-        <div className="ml-auto flex items-center gap-2">
-          <button
-            className="
-    hidden sm:flex items-center justify-center
-    px-3 py-1.5 gap-1
-    rounded-full
-    bg-gray-100/40 dark:bg-gray-800/60 border border-gray-100/40 dark:border-gray-700
-    text-gray-800 dark:text-gray-200
-    transition-all duration-200 ease-out
-    hover:scale-105
-    text-sm font-medium
-    hover:bg-gray-100/50 dark:hover:bg-gray-800/80
-  "
-            type="button"
-            onClick={toggleLocale}
-          >
-            <Globe size={12} />
-            {locale.toUpperCase()}
-          </button>
-          <button
-            className="
-    hidden sm:flex items-center justify-center
-    px-3 py-1.5 gap-1
-    rounded-full
-    bg-gray-100/50 dark:bg-gray-800/60 border border-gray-100/50 dark:border-gray-700
-    text-gray-800 dark:text-gray-200
-    transition-all duration-200 ease-out
-    hover:scale-105
-    text-sm font-medium
-    hover:bg-gray-100/60 dark:hover:bg-gray-800/80
-  "
-            type="button"
-            onClick={toggleTheme}
-          >
-            {theme === "light" ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          <div className="ml-auto flex items-center gap-2">
+            <button
+              className="
+      hidden sm:flex items-center justify-center
+      px-3 py-1.5 gap-1
+      rounded-full
+      bg-gray-100/40 dark:bg-gray-800/60 border border-gray-100/40 dark:border-gray-700
+      text-gray-800 dark:text-gray-200
+      transition-all duration-200 ease-out
+      hover:scale-105
+      text-sm font-medium
+      hover:bg-gray-100/50 dark:hover:bg-gray-800/80
+    "
+              type="button"
+              onClick={toggleLocale}
+            >
+              <Globe size={12} />
+              {locale.toUpperCase()}
+            </button>
+            <button
+              className="
+      hidden sm:flex items-center justify-center
+      px-3 py-1.5 gap-1
+      rounded-full
+      bg-gray-100/50 dark:bg-gray-800/60 border border-gray-100/50 dark:border-gray-700
+      text-gray-800 dark:text-gray-200
+      transition-all duration-200 ease-out
+      hover:scale-105
+      text-sm font-medium
+      hover:bg-gray-100/60 dark:hover:bg-gray-800/80
+    "
+              type="button"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
 
-          <button
-            className="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100/50 dark:hover:bg-gray-800/50 transition-colors dark:text-white"
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </Container>
+            <button
+              className="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100/50 dark:hover:bg-gray-800/50 transition-colors dark:text-white"
+              type="button"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </Container>
+      </header>
 
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-40">
-          <nav className="flex flex-col items-center justify-center gap-8 pt-12">
+        <div className="md:hidden fixed inset-0 top-16 bg-white dark:bg-gray-900 z-[100]">
+          <nav className="flex flex-col items-center gap-6 pt-8">
             <Link
               className={mobileNavLink}
               href="#about"
@@ -155,6 +157,6 @@ export function Header() {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }
