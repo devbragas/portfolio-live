@@ -38,7 +38,7 @@ export function Footer() {
             </h2>
             <div className="flex justify-start items-start flex-col gap-1 text-sm dark:text-gray-400">
               <button
-                onClick={() => handleScroll("aboutme")}
+                onClick={() => handleScroll("about")}
                 className="nav-btn dark:hover:text-blue-400"
               >
                 {t("aboutMe")}
