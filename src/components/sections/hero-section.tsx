@@ -12,7 +12,7 @@ export default function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 pt-24 lg:pt-36 px-4 lg:px-0 dark:bg-gray-900 transition-colors duration-300">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 pt-24 lg:pt-36 px-4 lg:px-0">
       <HeroBackground />
       <motion.div
         initial={{ opacity: 0, x: -50 }}

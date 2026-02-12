@@ -9,10 +9,7 @@ export function AboutSection() {
   const t = useTranslations("about");
 
   return (
-    <section
-      id="about"
-      className="pt-32 lg:pt-52 px-4 lg:px-0 bg-background dark:bg-gray-900 transition-colors duration-300"
-    >
+    <section id="about" className="pt-32 lg:pt-52 px-4 lg:px-0">
       <Container>
         <div className="flex flex-col gap-8 lg:gap-12">
           <motion.div

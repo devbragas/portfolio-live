@@ -116,10 +116,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section
-      id="skills"
-      className="py-16 lg:py-20 px-4 lg:px-0 bg-background dark:bg-gray-900 transition-colors duration-300"
-    >
+    <section id="skills" className="py-16 lg:py-20 px-4 lg:px-0">
       <Container>
         <div className="flex flex-col gap-8 lg:gap-12">
           <motion.div

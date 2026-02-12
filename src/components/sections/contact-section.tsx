@@ -10,10 +10,7 @@ export function ContactSection() {
   const t = useTranslations("contact");
 
   return (
-    <section
-      id="contact"
-      className="py-16 lg:py-20 px-4 lg:px-0 bg-background dark:bg-gray-900 transition-colors duration-300"
-    >
+    <section id="contact" className="py-16 lg:py-20 px-4 lg:px-0">
       <Container>
         <div className="flex flex-col items-center text-center">
           <motion.h2

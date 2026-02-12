@@ -13,10 +13,7 @@ import TechTag from "../ui/tech-tag";
 export function ExperienceSection() {
   const t = useTranslations("experience");
   return (
-    <section
-      id="experience"
-      className="py-3.5 dark:bg-gray-900 transition-colors duration-300"
-    >
+    <section id="experience" className="py-3.5">
       <div className="flex flex-col gap-8 lg:gap-12">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mt-2 text-[#162456] dark:text-white">
