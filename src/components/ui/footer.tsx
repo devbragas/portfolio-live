@@ -27,7 +27,12 @@ export function Footer() {
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-start gap-8 sm:gap-5 place-content-between pb-8">
           <div className="flex-1 flex flex-col">
-            <DevLogo />
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="w-fit cursor-pointer"
+            >
+              <DevLogo />
+            </button>
             <p className="text-sm mt-2 dark:text-gray-400">
               {t("description")}
             </p>
