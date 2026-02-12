@@ -59,7 +59,7 @@ const technicalSkillsData = [
       "AWS",
       "Cypress",
       "Datadog",
-      "Jira",
+
       "Postman",
       "Jenkins",
       "Figma",
