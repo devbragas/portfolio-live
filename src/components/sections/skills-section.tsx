@@ -3,7 +3,7 @@
 import { Container } from "../ui/container";
 import { motion } from "motion/react";
 import {
-  Code2,
+  Workflow,
   Database,
   Globe,
   Layers,
@@ -17,7 +17,7 @@ import { useTranslations } from "next-intl";
 const technicalSkillsData = [
   {
     categoryKey: "frontend",
-    icon: Code2,
+    icon: Palette,
     items: [
       "JavaScript",
       "TypeScript",
@@ -51,7 +51,7 @@ const technicalSkillsData = [
   },
   {
     categoryKey: "devops",
-    icon: Palette,
+    icon: Workflow,
     items: [
       "Git",
       "Docker",

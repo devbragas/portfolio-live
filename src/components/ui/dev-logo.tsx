@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { useThemeStore } from "../../app/store/use-theme-store";
 
 export function DevLogo() {
+  const { theme } = useThemeStore();
+
   return (
     <>
       <div className="flex items-center">
         <Image
-          src="/logo.png"
+          src={theme === "dark" ? "/secondary_logo.png" : "/logo.png"}
           width={70}
           height={70}
           alt="Enzo Braga Dev Logo"
