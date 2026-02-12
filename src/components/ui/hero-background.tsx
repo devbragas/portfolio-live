@@ -4,7 +4,6 @@ export function HeroBackground() {
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
     >
-      {/* Blob 1 */}
       <div
         className="
           absolute -left-24 -top-24
@@ -15,8 +14,6 @@ export function HeroBackground() {
           animate-floatA
         "
       />
-
-      {/* Blob 2 */}
       <div
         className="
           absolute -right-32 top-24
@@ -27,8 +24,6 @@ export function HeroBackground() {
           animate-floatB
         "
       />
-
-      {/* Quadradinho “pixelado” (opcional) */}
       <div
         className="
           absolute right-24 top-20

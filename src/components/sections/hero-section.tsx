@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { TypeAnimation } from "react-type-animation";
 import { HeroButton } from "../ui/hero-button";
 import { MapPin } from "lucide-react";
-import { HeroBackground } from "../ui/receba";
+import { HeroBackground } from "../ui/hero-background";
 import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
