@@ -7,8 +7,8 @@ import { Footer } from "../components/ui/footer";
 import { Providers } from "../components/providers";
 
 export const metadata: Metadata = {
-  title: "Enzo Braga | Portfólio",
-  description: "Portfólio pessoal Enzo Vasconcelos Braga",
+  title: "Enzo Vasconcelos | Portfólio",
+  description: "Portfólio pessoal do desenvolvedor Enzo Vasconcelos Braga",
 };
 
 export default function RootLayout({
