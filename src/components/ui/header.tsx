@@ -153,6 +153,13 @@ export function Header() {
                 <Globe size={14} />
                 {locale.toUpperCase()}
               </button>
+              <button
+                className="flex items-center justify-center px-4 py-2 gap-1 rounded-full bg-gray-100/60 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium"
+                type="button"
+                onClick={toggleTheme}
+              >
+                {theme === "light" ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
             </div>
           </nav>
         </div>
