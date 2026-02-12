@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export function HeroButton() {
   const t = useTranslations("hero");
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center lg:justify-start">
       <Link
         href="/Currículo-Enzo_Vasconcelos.pdf"
         download={"Currículo - Enzo Vasconcelos"}

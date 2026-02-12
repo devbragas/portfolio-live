@@ -74,7 +74,7 @@
     "result3Value": "-45%",
     "result3Desc": "tempo de execução de queries",
     "result4Value": "8s → 3s",
-    "result4Desc": "tempo de resposta da API"
+    "result4Desc": "resposta da API"
   },
   "contact": {
     "title": "Vamos Trabalhar Juntos?",
