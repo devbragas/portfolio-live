@@ -150,33 +150,33 @@ export function ExperienceSection() {
                         {t("resultsTitle")}
                       </h4>
                     </div>
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="flex items-center gap-3 p-2 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
-                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
+                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400 shrink-0">
                           {t("result1Value")}
                         </span>
                         <span className="text-xs text-gray-600 dark:text-gray-300">
                           {t("result1Desc")}
                         </span>
                       </div>
-                      <div className="flex items-center gap-3 p-2 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
-                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400">
+                      <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
+                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400 shrink-0">
                           {t("result2Value")}
                         </span>
                         <span className="text-xs text-gray-600 dark:text-gray-300">
                           {t("result2Desc")}
                         </span>
                       </div>
-                      <div className="flex items-center gap-3 p-2 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
-                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400">
+                      <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
+                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400 shrink-0">
                           {t("result3Value")}
                         </span>
                         <span className="text-xs text-gray-600 dark:text-gray-300">
                           {t("result3Desc")}
                         </span>
                       </div>
-                      <div className="flex items-center gap-3 p-2 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
-                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400">
+                      <div className="flex items-center gap-3 p-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/20">
+                        <span className="text-lg font-bold text-[#2E4A8A] dark:text-blue-400 shrink-0">
                           {t("result4Value")}
                         </span>
                         <span className="text-xs text-gray-600 dark:text-gray-300">
